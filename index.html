@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JACS Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <script src="https://kit.fontawesome.com/072cf49956.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="close">
+    <div class="sidebar-header">
+        <i class="icon-JACS-logo"></i>
+        <span class="logo-name">Trial</span>
+    </div>
+    <ul class="list-unstyled components">
+        <li>
+            <a href="#home" onclick="exitclick()">
+                <i class="fas fa-home"></i>
+                <span class="link_name">Home</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#home" onclick="exitclick()">Home</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#about">
+                <i class="fas fa-user-tie"></i>
+                <span class="link_name" onclick="exitclick()">About</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#about" onclick="exitclick()">About</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#skills" onclick="exitclick()">
+                <i class="fas fa-cogs"></i>
+                <span class="link_name">Skills</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#skills" onclick="exitclick()">Skills</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="icons-link">
+              <a href="#projects" onclick="allclick()">
+                  <i class="fas fa-lightbulb"></i>
+                  <span class="link_name">Projects</span>
+              </a>
+              <i class="fas fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#projects" onclick="allclick()">Projects</a></li>
+                <li><a href="#projects" onclick="htmlclick()">HTML & CSS</a></li>
+                <li><a href="#projects" onclick="jsclick()">JavaScript</a></li>
+                <li><a href="#projects" onclick="reactclick()">React</a></li>
+            </ul>
+        </li>
+
+          <!--<li>
+            <a href="#certificates">
+                <i class="fas fa-certificate"></i>
+                <span class="link_name">Certificates</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="#certificates">Certificates</a></li>
+            </ul>
+        </li>-->
+    </ul>
+  </nav>
+
+  <!-- Toggle Button -->
+  <div class="button-relative">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Content -->
+  <main class="content">
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="animation">
+          <!-- Refer to Home.js -->
+        </div>
+
+        <div class="home-content">
+          <h2>Hello, I'm <span>John Alber Santos</span>.</h2>
+          <p>I'm a BSIT Student</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-left">
+          <div class="icon-gradient">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <div class="left-container">
+            I'm a BSIT student that is passionate about JavaScript, React, and all things web development. I am completely committed to the concept of lifelong learning. My passion for web development stems from the unique combination of creativity, logic, technology, and never running out of new things to discover. When I'm not working on my computer, I like to read comics, code side projects, and play video games.
+          </div>
+      </div>
+      <div class="about-right">
+          <div class="right-container">
+              <span class="shadow">
+                 <div class="hex">
+                     <div class="img-hex">
+                        <img src="img/HTML5.png" alt="" class="clip"> 
+                     </div>
+                      <div class="hex-title">HTML 5</div>
+                  </div> 
+              </span>
+              
+              <span class="shadow">
+                  <div class="hex">
+                      <div class="img-hex">
+                          <img src="img/CSS.png" alt="" class="clip">
+                      </div>
+                      <div class="hex-title">CSS</div>
+                  </div>
+              </span>
+                  
+              <span class="shadow">
+                  <div class="hex">
+                      <div class="img-hex">
+                         <img src="img/JS.png" alt="" class="clip"> 
+                      </div>
+                      <div class="hex-title">JS</div>
+                  </div>
+              </span>
+                  
+              <span class="shadow">
+                  <div class="hex">
+                      <div class="img-hex">
+                         <img src="img/REACT.png" alt="" class="clip"> 
+                      </div>
+                      <div class="hex-title">REACT</div>
+                  </div>
+              </span>
+                  
+              <span class="shadow">
+                  <div class="hex">
+                      <div class="img-hex">
+                          <img src="img/GIT.png" alt="" class="clip">
+                      </div>
+                      <div class="hex-title">GIT</div>
+                  </div>
+              </span>
+                 
+          </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+    
+
+        <!-- When Adding Section Also Add Icons After -->
+        <div class="section active">
+          <div class="section-title">
+            <i class="fa-brands fa-html5" style="color: #E44D26"></i>
+            <h2>HTML 5</h2>
+          </div>
+            
+          <div class="section-container">
+              <div class="section-sub-left">
+                  <ul>
+                    <li>Basic HTML</li>
+                    <li>Bootstrap Integration</li>
+                    <li>Code Cleaning</li>
+                    <li>Code Commenting</li>
+                    <li>Use of APIs</li>
+                  </ul>
+              </div>
+              <div class="section-sub-right">
+                  
+                  <div class="round" data-value="0.9" data-size="200" data-thickness="12" data-color="#E44D26">
+                      <strong></strong>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <i class="fa-brands fa-css3-alt" style="color: #264DE4"></i>
+            <h2>CSS 3</h2>
+          </div>  
+
+          <div class="section-container">
+              <div class="section-sub-left">
+                <ul>
+                  <li>Basic CSS</li>
+                  <li>Override Bootstrap Styles</li>
+                  <li>Basic CSS Animation</li>
+                  <li>Flexbox</li>
+                  <li>CSS Grid</li>
+                </ul>
+              </div>
+              <div class="section-sub-right">
+                  
+                  <div class="round" data-value="0.85" data-size="200" data-thickness="12" data-color="#264DE4">
+                      <strong></strong>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">
+            <i class="fa-brands fa-js-square" style="color: #F0DB4F"></i>
+            <h2>JAVASCRIPT</h2>
+          </div>
+            
+          <div class="section-container">
+              <div class="section-sub-left">
+                <ul>
+                  <li>Basic JavaScript</li>
+                  <li>Use of Available Libraries</li>
+                  <li>Control Flow</li>
+                  <li>DOM Manipulation</li>
+                  <li>Object Oriented Approach</li>
+                  <li>Frontend Framework</li>
+                </ul>
+              </div>
+              <div class="section-sub-right">
+                  
+                  <div class="round" data-value="0.85" data-size="200" data-thickness="12" data-color="#F0DB4F">
+                      <strong></strong>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+
+
+       
+
+        <div class="control">
+            <span class="arrow left">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="arrow right">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+        </div>
+
+
+        <div class="navigation-visibility-about">
+            <div class="skills-slide-icon active"></div>
+            <div class="skills-slide-icon"></div>
+            <div class="skills-slide-icon"></div>
+        </div>
+
+
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+
+      <ul id="buttons">
+          <li class="active"><a class="btn" onclick="filterCards('all')" id="btn-all">ALL</a></li>
+          <li><a class="btn" onclick="filterCards('html')" id="btn-html">HTML</a></li>
+          <li><a class="btn" onclick="filterCards('js')" id="btn-js">JAVASCRIPT</a></li>
+          <li><a class="btn" onclick="filterCards('react')" id="btn-react">REACT</a></li>
+          <li class="nav-slide"></li>
+      </ul>
+          
+      <div class="flexbox">
+
+        <div class="item">
+          <div class="card html">
+              <div class="card-content">
+                  <h2 class="card-title">Project Name 1</h2>
+                  <p class="card-body">Lorem ipsum dolor sit amet consectur adipisicing elit. Fugiat rem facilis.</p>
+                  <a class="button popup-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="popup-view">
+              <div class="popup-card">
+                  <a><i class="fas fa-times close-btn" id="close-btn"></i></a>
+                  <div class="product-img">
+                      <div class="slider">
+                        <div class="slide active">
+                          <img src="img/1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                          <img src="img/2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                          <img src="img/3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                          <img src="img/4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                          <img src="img/5.jpg" alt="">
+                        </div>
+                        <div class="navigation">
+                          <i class="fas fa-chevron-left prev-btn"></i>
+                          <i class="fas fa-chevron-right next-btn"></i>
+                        </div>
+                        <div class="navigation-visibility">
+                          <div class="slide-icon active"></div>
+                          <div class="slide-icon"></div>
+                          <div class="slide-icon"></div>
+                          <div class="slide-icon"></div>
+                          <div class="slide-icon"></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="popup-info">
+                      <h2>Project Name<br><span>HTML</span></h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <a href="#" class="ext-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>  &nbsp; View Live</a>
+                      <a href="#" class="ext-btn alt"><i class="fa-brands fa-git"></i> &nbsp; View Code</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="item">
+            <div class="card js">
+                <div class="card-content">
+                    <h2 class="card-title">TicTacToe</h2>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectur adipisicing elit. Fugiat rem facilis.</p>
+                    <a class="button popup-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <div class="slider">
+                            <div class="slide active">
+                              <img src="img/popup/js-tictactoe/js-tictactoe-1.png" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/popup/js-tictactoe/js-tictactoe-2.png" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/popup/js-tictactoe/js-tictactoe-3.png" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/popup/js-tictactoe/js-tictactoe-4.png" alt="">
+                            </div>
+                            <div class="navigation">
+                              <i class="fas fa-chevron-left prev-btn"></i>
+                              <i class="fas fa-chevron-right next-btn"></i>
+                            </div>
+                            <div class="navigation-visibility">
+                              <div class="slide-icon active"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <h2>TicTacToe<br><span>JAVASCRIPT</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="https://omnitricks1424.github.io/Tic-Tac-Toe-Portfolio/" target="_blank" class="ext-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>  &nbsp; View Live</a>
+                        <a href="https://github.com/omnitricks1424/Tic-Tac-Toe-Portfolio" target="_blank" class="ext-btn alt"><i class="fa-brands fa-git"></i> &nbsp; View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="card react">
+                <div class="card-content">
+                    <h2 class="card-title">Project Name 3</h2>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectur adipisicing elit. Fugiat rem facilis.</p>
+                    <a class="button popup-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <div class="slider">
+                            <div class="slide active">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/5.jpg" alt="">
+                            </div>
+                            <div class="navigation">
+                              <i class="fas fa-chevron-left prev-btn"></i>
+                              <i class="fas fa-chevron-right next-btn"></i>
+                            </div>
+                            <div class="navigation-visibility">
+                              <div class="slide-icon active"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <h2>Project Name<br><span>REACT</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="ext-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>  &nbsp; View Live</a>
+                        <a href="#" class="ext-btn alt"><i class="fa-brands fa-git"></i> &nbsp; View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="card html">
+                <div class="card-content">
+                    <h2 class="card-title">Project Name 4</h2>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectur adipisicing elit. Fugiat rem facilis.</p>
+                    <a class="button popup-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <div class="slider">
+                            <div class="slide active">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/5.jpg" alt="">
+                            </div>
+                            <div class="navigation">
+                              <i class="fas fa-chevron-left prev-btn"></i>
+                              <i class="fas fa-chevron-right next-btn"></i>
+                            </div>
+                            <div class="navigation-visibility">
+                              <div class="slide-icon active"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <h2>Project Name<br><span>HTML</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="ext-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>  &nbsp; View Live</a>
+                        <a href="#" class="ext-btn alt"><i class="fa-brands fa-git"></i> &nbsp; View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="card js">
+                <div class="card-content">
+                    <h2 class="card-title">Project Name 5</h2>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectur adipisicing elit. Fugiat rem facilis.</p>
+                    <a class="button popup-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <div class="slider">
+                            <div class="slide active">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/5.jpg" alt="">
+                            </div>
+                            <div class="navigation">
+                              <i class="fas fa-chevron-left prev-btn"></i>
+                              <i class="fas fa-chevron-right next-btn"></i>
+                            </div>
+                            <div class="navigation-visibility">
+                              <div class="slide-icon active"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <h2>Project Name<br><span>JAVASCRIPT</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="ext-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>  &nbsp; View Live</a>
+                        <a href="#" class="ext-btn alt"><i class="fa-brands fa-git"></i> &nbsp; View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="card react">
+                <div class="card-content">
+                    <h2 class="card-title">Project Name 6</h2>
+                    <p class="card-body">Lorem ipsum dolor sit amet consectur adipisicing elit. Fugiat rem facilis.</p>
+                    <a class="button popup-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <div class="slider">
+                            <div class="slide active">
+                              <img src="img/1.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/2.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/3.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                              <img src="img/5.jpg" alt="">
+                            </div>
+                            <div class="navigation">
+                              <i class="fas fa-chevron-left prev-btn"></i>
+                              <i class="fas fa-chevron-right next-btn"></i>
+                            </div>
+                            <div class="navigation-visibility">
+                              <div class="slide-icon active"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                              <div class="slide-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-info">
+                        <h2>Project Name<br><span>HTML</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="ext-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i>  &nbsp; View Live</a>
+                        <a href="#" class="ext-btn alt"><i class="fa-brands fa-git"></i> &nbsp; View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/home.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>
